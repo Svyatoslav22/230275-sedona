@@ -1,0 +1,30 @@
+body {
+    font-size: 12px;
+    line-height:: 26px;
+    color: black;
+    font: PTSans;
+    font-weight: bold; 
+    
+}
+h2 {
+    font-size: 21px;
+}
+p {
+    font-size: 14px;
+}
+h1 {
+    font-size: 30px;
+}
+.5reasons,
+.2reason {
+    color: white;
+}
+p {
+    font-weight: regular;
+}
+.search-header {
+    color: white;
+}
+.search-btn {
+    color: white;
+}
