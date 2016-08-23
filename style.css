@@ -28,3 +28,173 @@ p {
 .search-btn {
     color: white;
 }
+
+}
+
+body {
+  min-width:768 px;
+  
+}
+.header-navigation {
+  background:pink;
+width:768px;
+  height:55px;
+  
+}
+.velcome-to-sedona {
+  background:grey;
+  width:768px;
+  height:513px;
+}
+.reasons5 {
+background:pink;
+width:768px;
+height:212px;
+  
+}
+.reason1 {
+  background: yellow;
+  width:768px;
+  height:255px;
+}
+.reason1-1 {
+  margin-right:0px;
+  background:red;
+  width:255px;
+  height:255px;
+  float:left;
+}
+.reason1-2 {
+  background:blue;
+  width:513px;
+  height:255px;
+  float:right;
+  
+}
+.reasons1-3{
+  width:768px;
+  height:330px;
+  background:yellow;
+}
+.reason1-3 {
+  height:330px;
+  width:255px;
+  float:left;
+}
+.reason1-4{
+height:330px;
+  width:255px;
+  float:left;
+}
+.reason1-5 {
+  height:330px;
+  width:255px;
+  float:right;
+}
+.reason2 {
+  background:red;
+  width:768px;
+  height:255px;
+}
+.reason2-1 {
+ background:blue;
+  width:513px;
+  height:255px;
+  float:left;
+}
+.reason2-2 {
+  background:red;
+  width:255px;
+  height:255px;
+  float:right;
+}
+.reason3-4-5 {
+  width: 768px;
+  height:255px;
+
+}
+.reason3 {
+  background:red;
+  width:255px;
+  height:255px;
+    float:left;
+}
+.reason4 {
+  background:green;
+  width:255px;
+  height:255px;
+    float:left;
+}
+.reason5 {
+   background:yellow;
+  width:255px;
+  height:255px;
+    float:right;
+}
+.interesting {
+  height:290px;
+  width:768px;
+  background:brown;
+}
+.search-header {
+  width:568px;
+  height:85px;
+margin:120px 0px 100px 100px;
+  Background:red;
+}
+.map-main {
+  padding:0px;
+  width:768px;
+    height:472px;
+  background:yellow;
+}
+ .search {
+  height:395px;
+  width:568px;
+  background:green;
+   margin: 0 78px 100px 100px;
+}
+.main-footer {
+  height:119px;
+  width:768px;
+  background:green;
+  padding-top:35.5px;
+  padding-bottom:35.5px;
+}
+.container-footer {
+  width:680px;
+  height:48px;
+  background:red;
+  margin-left:58px;
+  margin-right:30px;
+  
+}
+ .hashtag {
+ height:48px;
+  width:141px;
+  background:yellow;
+ float:left;
+}
+.social {
+  width:150px;
+  height:48px;
+  float:left;
+  background:blue;
+  margin-left:108px;
+}
+.HA {
+  width:196px;
+  height:48px;
+  background:black;
+  float:right;
+  margin:0px;
+}
+.wrapper {
+  margin: 0 auto;
+}
+ after::clearfix {
+  content: "";
+  display: block;
+  clear: both;
+
+}
