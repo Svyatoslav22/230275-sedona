@@ -38,7 +38,7 @@ body {
 .header-navigation {
   padding:1px;
   background:pink;
-width:1200px;
+  width:1200px;
   min-height:56px;
   
 }
@@ -164,6 +164,7 @@ min-height:216px;
   padding-bottom:35px;
 }
 .container-footer {
+  
   width:968px;
   height:48px;
   background:red;
@@ -193,12 +194,99 @@ min-height:216px;
   float:right;
   margin:0px;
 }
-.wrapper {
+/* страница catalog*/
+ .filter{
+   padding-top:28px;
+   padding-bottom:30px;
+  width:1200px;
+  height:217;
+  background: blue;
+}
+.checkbox1 {
+  width:240px;
+  height:159px;
+  margin-left:72px;
+  display:block;
+  float:left;
+}
+.checkbox2 {
+  background:yellow;
+  display:block;
+  width:287px;
+  height:159px;
+  float:left;
+}
+.price-btn {
+  width:328px;
+  height:159px;
+  display:block;
+  float:right;
+  margin-right:72px;
+  background:red;
+}
+.filter2 {
+  width:1200px;
+  height:86px;
+  background:grey;
+}
+.result{
+  width:1200px;
+  height:454px;
+  background:brown;
+}
+.result .amara {
+  display:block;
+  padding: 29px 72px;
+  background:white;
+  width:1056px;
+  height:92px;
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+}
+.result .amara img{
+  width:135px;
+  height:90px;
+  float:left;
+  margin-right:30px;
+}
+.DESERT {
+  display:block;
+  padding: 29px 72px;
+  background:white;
+  width:1056px;
+  height:92px;
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+}
+.result .DESERT img{
+  width:135px;
+  height:90px;
+  float:left;
+  margin-right:30px;
+}
+.VILLAS {
+ display:block;
+  padding: 29px 72px;
+  background:white;
+  width:1056px;
+  height:92px;
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+}
+.result .VILLAS img{
+  width:135px;
+  height:90px;
+  float:left;
+  margin-right:30px;
+}
+
+body .wrapper {
   margin: 0 auto;
 }
- after::clearfix {
+ .clearfix::after {
   content: "";
   display: block;
   clear: both;
 
 }
+
