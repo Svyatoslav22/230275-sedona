@@ -1,0 +1,401 @@
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    color: black;
+    font: PTSans;
+    font-weight: bold; 
+    width:1200px;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 21px;
+}
+p {
+    font-size: 14px;
+}
+h1 {
+    font-size: 30px;
+}
+.5reasons,
+.2reason {
+    color: white;
+}
+p {
+    font-weight: normal;
+}
+.search-header {
+    color: white;
+}
+.search-btn {
+    color: white;
+}
+
+
+  
+}
+.header-navigation {
+  padding:1px;
+  background:white;
+  width:1200px;
+  min-height:56px;
+  
+}
+.velcome-to-sedona {
+  
+  width:1200px;
+  height:508px;
+}
+.reasons5 {
+  padding-top:62px;
+background:white;
+width:1200px;
+min-height:154px;
+  text-align:center;
+  padding-bottom:1px;
+}
+.reasons5 p {
+  font-weight:normal;
+}
+
+.reason1 {
+  width:1200px;
+  min-height:256px;
+}
+.reason1-1 {
+  margin-right:0px;
+  background:#81b3d2;
+  width:300px;
+  height:148px;
+  float:left;
+  color:white;
+  text-align:center;
+  padding:54px 50px;
+  font-weight:normal;
+}
+.reason1-1 h2{
+  margin:0 0;
+}
+.reason1-2 {
+  width:800px;
+  height:256px;
+  float:right;
+  
+}
+.reasons1-3{
+  width:1200px;
+  min-height:330px;
+  
+}
+.reason1-3 {
+  height:210px;
+  width:256px;
+  float:left;
+  background:white;
+  text-align:center;
+  padding:60px 72px;
+}
+.reason1-3 h2 {
+  margin:30px
+}
+.reason1-4{
+  height:210px;
+  width:284px;
+  float:left;
+   background:white;
+  text-align:center;
+  padding:60px 58px;
+}
+.reason1-4 h2 {
+ margin:30px; 
+}
+.reason1-5 {
+  height:220px;
+  width:276px;
+  float:right;
+  background:white;
+  text-align:center;
+  padding: 55px 62px;
+}
+.reason1-5 h2 {
+  margin:30px;
+}
+.reason2 {
+  width:1200px;
+  height:256px;
+}
+.reason2-1 {
+  width:800px;
+  height:256px;
+  float:left;
+}
+.reason2-2 {
+   background:#81b3d2;
+  float:left;
+  color:white;
+  text-align:center;
+  font-weight:normal;
+  width:304px;
+  height:146px;
+  float:right;
+  padding: 55px 48px;
+}
+.reason3-4-5 {
+  width: 1200px;
+  height:256px;
+
+}
+.reason3 {
+  text-align:center;
+  font-weight:normal;
+  background:#eeeeee;
+  width:256px;
+  height:160px;
+    float:left;
+  padding:48px 72px;
+}
+.reason4 {
+text-align:center;
+  font-weight:normal;
+  background:#eeeeee;
+  width:264px;
+  height:160px;
+    float:left;
+  padding:48px 68px;
+}
+.reason5 {
+text-align:center;
+  font-weight:normal;
+  background:#eeeeee;
+  width:264px;
+  height:160px;
+    float:left;
+  padding:48px 68px;
+}
+.interesting {
+  text-align:center;
+  font-weight:normal;
+  padding:1px;
+  height:178px;
+  width:1200px;
+  background:white;
+  padding:56px 0;
+}
+
+.map-main {
+  width:1200px;
+    height:593px;
+  
+  z-index:1;
+}
+.search{
+ position:absolute;
+  height:395px;
+  width:568px;
+  background:blue;
+   top:2125px;
+   left:50%;
+   margin-left: -284px;
+}
+  .search-header button{
+  position:relative;
+  background:#766357;
+  width:568px;
+  height:85px;
+  text-align:center;
+  padding:1px;
+   top:19px;
+    left:-20px;
+    color:white;
+} 
+.search-header a{
+  text-decoration:none;
+  color:white;
+}
+ul .search-ul {
+  display:none;
+}
+.search-header:active .search-ul{
+  display:block;
+  
+}
+.search-header h2 {
+  margin-top:33px;
+}
+.Arrival-Information {
+
+  padding:55px;
+  
+}
+.search-btn {
+  
+  
+}
+
+.main-footer {
+  height:45px;
+  width:940px;
+  z-index:2;
+  position:absolute;
+  bottom:-2207px;
+  background-color: rgba (255, 255, 255, 0,5);
+  padding:37px 130px;
+}
+
+.hashtag{
+  display:block;
+  min-width:137px;
+  height:45px;
+  background:blue;
+  vertical-align:top;
+  float:left;
+ }
+
+.social {
+    display:block;
+  min-width:137px;
+  height:45px;
+  background:blue;
+  vertical-align:top;
+  float:left;
+  margin-left:254px;
+}
+.HTML-ACADEMY {
+    display:block;
+  width:196px;
+  height:45px;
+  background:blue;
+  vertical-align:top;
+  float:right;
+}
+  
+ 
+/* страница catalog*/
+ .filter{
+   padding-top:28px;
+   padding-bottom:30px;
+  width:1200px;
+  height:217px;
+  background: blue;
+}
+.checkbox1 {
+  width:240px;
+  height:159px;
+  margin-left:72px;
+  display:block;
+  float:left;
+}
+.checkbox2 {
+  background:yellow;
+  display:block;
+  width:287px;
+  height:159px;
+  float:left;
+}
+.price-btn {
+  width:328px;
+  height:159px;
+  display:block;
+  float:right;
+  margin-right:72px;
+  background:red;
+}
+.filter2 {
+  width:1200px;
+  height:86px;
+  background:grey;
+}
+.result{
+  width:1200px;
+  height:454px;
+  background:brown;
+}
+.result .amara {
+  display:block;
+  padding: 29px 72px;
+  background:white;
+  width:1056px;
+  height:92px;
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+}
+.result .amara img{
+  width:135px;
+  height:90px;
+  float:left;
+  margin-right:30px;
+}
+.DESERT {
+  display:block;
+  padding: 29px 72px;
+  background:white;
+  width:1056px;
+  height:92px;
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+}
+.result .DESERT img{
+  width:135px;
+  height:90px;
+  float:left;
+  margin-right:30px;
+}
+.VILLAS {
+ display:block;
+  padding: 29px 72px;
+  background:white;
+  width:1056px;
+  height:92px;
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+}
+.result .VILLAS img{
+  width:135px;
+  height:90px;
+  float:left;
+  margin-right:30px;
+}
+.header-navigation a {
+  font-size:14px;
+  display:inline;
+  text-decoration:none;
+  color:black;
+  
+}
+.header-navigation li{ 
+  list-style-type:none;
+  display:block;
+}
+.header-navigation ul {
+  position:relative;
+  padding:0px 0px;
+}
+.header-navigation li .info {
+ padding:15px 72px;
+  float:left;
+}
+.header-navigation li .photo {
+ padding:15px 72px;
+  
+  float:left;
+}
+.header-navigation li .logo {
+  position:absolute;
+ padding:15px 72px;
+  float:left;
+}
+.header-navigation li .site-map {
+   padding:15px 72px;
+  
+  float:right;
+}
+.header-navigation li .hotels {
+   padding:15px 72px;
+  float:right;
+}
+
+
+ .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
