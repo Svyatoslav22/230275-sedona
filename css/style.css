@@ -188,14 +188,43 @@ text-align:center;
   
   z-index:1;
 }
-.search{
+ul .search-ul{
  position:absolute;
   height:395px;
   width:568px;
-  background:blue;
+  background:wgite;
    top:2125px;
    left:50%;
    margin-left: -284px;
+  padding:0px;
+}
+.Arrival-Date input[type="date"],
+.Date-Of-Departure input[type="date"]{
+ width:345px;
+background:#f2f2f2;
+  border:none;
+  padding: 10px 12px;
+  padding-right: 40px;
+   margin-right: 55px;
+  margin-bottom:29px;
+  color:white;
+    font-size: 14px;
+    line-height: 26px;
+    color: black;
+    font: PTSans;
+    font-weight: bold;
+}
+
+}
+label {
+   font-size: 14px;
+    line-height: 26px;
+    color: black;
+    font: PTSans;
+    font-weight: bold;
+}
+.Arrival-Date input[type="date"]{
+  margin-top:55px;
 }
   .search-header button{
   position:relative;
@@ -207,14 +236,19 @@ text-align:center;
    top:19px;
     left:-20px;
     color:white;
+    font-size: 21px;
+    line-height: 26px;
+    color: white;
+    font: PTSans;
+    font-weight: bold;
+    border:none;
 } 
-.search-header a{
-  text-decoration:none;
-  color:white;
+ul {
+  margin-left:0px;
 }
-ul .search-ul {
-  display:none;
-}
+
+
+
 .search-header:active .search-ul{
   display:block;
   
@@ -222,9 +256,7 @@ ul .search-ul {
 .search-header h2 {
   margin-top:33px;
 }
-.Arrival-Information {
 
-  padding:55px;
   
 }
 .search-btn {
@@ -238,7 +270,7 @@ ul .search-ul {
   z-index:2;
   position:absolute;
   bottom:-2207px;
-  background-color: rgba (255, 255, 255, 0,5);
+  background-color:rgba(255, 255, 255, 0.5);
   padding:37px 130px;
 }
 
@@ -246,7 +278,7 @@ ul .search-ul {
   display:block;
   min-width:137px;
   height:45px;
-  background:blue;
+  
   vertical-align:top;
   float:left;
  }
@@ -255,18 +287,48 @@ ul .search-ul {
     display:block;
   min-width:137px;
   height:45px;
-  background:blue;
+  
   vertical-align:top;
   float:left;
   margin-left:254px;
+  text-decoration:none;
+}
+.social-btn-Twitter {
+  font-size:0;
+  display:block;
+  float:left;
+  width:45px;
+  height:45px;
+  
+  margin-right:5px;
+  background: #81b3d2 url("/img/t.png") no-repeat 50% 50%;
+}
+.social-btn-fb {
+  font-size:0;
+  display:block;
+  float:left;
+  width:45px;
+  height:45px;
+  
+  margin-right:5px;
+  background: #81b3d2 url("/img/f.png") no-repeat 50% 50%; 
+}
+.social-btn-youtube {
+   font-size:0;
+  display:block;
+  float:left;
+  width:45px;
+  height:45px;
+
+  background: #81b3d2 url("/img/u.png") no-repeat 50% 50%; 
 }
 .HTML-ACADEMY {
     display:block;
   width:196px;
   height:45px;
-  background:blue;
   vertical-align:top;
   float:right;
+  background: url("/img/HTML-ACADEMY.png") no-repeat 50% 50%;
 }
   
  
@@ -381,8 +443,8 @@ ul .search-ul {
 }
 .header-navigation li .logo {
   position:absolute;
- padding:15px 72px;
-  float:left;
+   left:50%;
+   margin-left: -69px;
 }
 .header-navigation li .site-map {
    padding:15px 72px;
@@ -399,3 +461,4 @@ ul .search-ul {
   content: "";
   display: block;
   clear: both;
+}
