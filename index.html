@@ -114,13 +114,17 @@
                                      <label for="Date-Of-Departure">ДАТА ВЫЕЗДА:</label>
                                      <input class="date" id="Date-Of-Departure" type="date" value="2016-08-04" >
                                   </div>
-                                  <div>
+                                  <div class="grown-class">
                                      <label for="grown">ВЗРОСЛЫЕ</label>
-                                     <input id="grown" type="number" >
+                                    <div class="grown-plus"></div>
+                                     <input id="grown" class="people-number"  type="text" pattern="[0-9]*" value="2" min="0">
+                                    <div class="grown-minus"></div>
                                   </div>
-                                  <div>
+                                  <div class="child-class">
                                      <label for="child">ДЕТИ</label>
-                                     <input id="child" type="number" >
+                                    <div class="cheld-plus"></div>
+                                     <input id="child" class="people-number"  type="text" pattern="[0-9]*" value="0" min="0">
+                                    <div class="child-minus"></div>
                                   </div>
                                </div>
                               <div class="search-btn">

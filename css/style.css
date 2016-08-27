@@ -192,8 +192,8 @@ ul .search-ul{
  position:absolute;
   height:395px;
   width:568px;
-  background:wgite;
-   top:2125px;
+  background:white;
+   top:2127px;
    left:50%;
    margin-left: -284px;
   padding:0px;
@@ -201,7 +201,7 @@ ul .search-ul{
 .Arrival-Date input[type="date"],
 .Date-Of-Departure input[type="date"]{
  width:345px;
-background:#f2f2f2;
+background:#f2f2f2 url(/img/calendar.png) no-repeat 0 290px;
   border:none;
   padding: 10px 12px;
   padding-right: 40px;
@@ -257,7 +257,54 @@ ul {
   margin-top:33px;
 }
 
-  
+
+.people-number  {
+  text-align:center;
+  display:inline-block;
+  width:38px;
+  height:38px;
+  background:#f2f2f2;
+  border:none;
+}
+.grown-plus {
+  vertical-align:middle;
+  display:inline-block;
+  width:38px;
+  height:38px;
+  background:#f2f2f2;
+  border:none;
+}
+.grown-minus {
+  vertical-align:middle;
+ display:inline-block;
+  width:38px;
+  height:38px;
+  background:#f2f2f2;
+  border:none; 
+}
+.grown-class{
+float:left;
+  margin-left:45px;
+}
+.child-plus {
+  vertical-align:middle;
+  display:inline-block;
+  width:38px;
+  height:38px;
+  background:#f2f2f2;
+  border:none;
+}
+.child-minus {
+  vertical-align:middle;
+ display:inline-block;
+  width:38px;
+  height:38px;
+  background:#f2f2f2;
+  border:none; 
+}
+.child-class{
+float:left;
+  margin-left:125px;
 }
 .search-btn {
   
