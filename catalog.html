@@ -6,15 +6,15 @@
     <title>"Поиск отселей СЕДОНА"</title>
   </head>
   <body>
-       <div class="wrapper">
         <header class="main-header">
-    <nav class="header-navigation">
+    <nav class="header-navigation clearfix">
         <ul>
-            <li><a href="#">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#">ФОТО И ВИДЕО</a></li>
-            <li><a href="#"><img src="/img/logo.png" alt="logo"></a></li>
-            <li><a href="#">КАРТА ШТАТА</a></li>
-            <li><a href="#" >ГОСТИННИЦЫ</a></li>
+            <li><a href="#" class="info">ИНФОРМАЦИЯ</a></li>
+            <li><a href="#" class="photo">ФОТО И ВИДЕО</a></li>
+            <li><a href="#" class="logo"><img src="/img/logo.png" alt="лого" width="138" height="70"></a></li>
+            
+            <li><a href="#" class="hotels">ГОСТИННИЦЫ</a></li>
+            <li><a href="#" class="site-map">КАРТА ШТАТА</a></li>
         </ul>
     </nav>
       
@@ -38,10 +38,14 @@
                   </ul>
               </div>
               <div class="price-btn">
-                  <span>СТОИМОСТЬ В СУТКИ (Р):</span>
-                  <input type="number"><input type="number">
-                  <div class="price"><input type="range"> </div>
-                  <input class="submit" value="ПОКАЗАТЬ">
+                  <span>СТОИМОСТЬ В СУТКИ (Р):</span><br>
+                  <input  class="from" type="text" value="ОТ 0"><input class="end3000" type="text" value="ДО 3000">
+                  <div class="price-range">
+                    
+                    <input type="range">
+                    
+                  </div>
+                  <input cluss="btn-view" type="submit" value="ПОКАЗАТЬ">
                   
                   
               </div>
@@ -49,8 +53,8 @@
           <div class="filter2 clearfix">
               <span class="found">НАЙДЕНО:3</span>
             <ul>
-                <li><span>СОРТИРОВКА:</span></li>
-                <li><a href="#">ПО ЦЕНЕ</a></li>
+                <li><p class="sort">СОРТИРОВКА:</p></li>
+                <li><a  class="active" href="#">ПО ЦЕНЕ</a></li>
                 <li><a href="#">ПО ТИПУ</a></li>
                 <li><a href="#">ПО РЕЙТИНГУ</a></li>
               </ul>
@@ -60,33 +64,33 @@
               <div class="amara clearfix">
                   <img src="/img/AR&S.jpg" alt="AMARA RESORT & SPA">
                   <h2>AMARA RESORT & SPA</h2>
-                  <span>ГОСТИНИЦА ОТ 3500 Р.</span>
-                  <a href="#">ПОДРОБНЕЕ</a>
-                  <a href="#">ЗАБРОНИРОВАТЬ</a>
-                  <div class="stars"></div>
-                  <div class="hotel-rating"></div>
+                  <div class="type-catalog">ГОСТИНИЦА</div><div class="from-catalog">ОТ 3500 Р.</div><br>
+                  <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
+                  <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
+                  <div class="stars">★ ★ ★ ★</div>
+                  <div class="hotel-rating">РЕЙТИНГ: 8,5</div>
               </div>
               <div class="DESERT">
                   <img src="/img/DQI.jpg" alt="DESERT QUAIL INN">
                   <h2>DESERT QUAIL INN</h2>
-                  <span>МОТЕЛЬ ОТ 2000 Р.</span>
-                  <a href="#">ПОДРОБНЕЕ</a>
-                  <a href="#">ЗАБРОНИРОВАТЬ</a>
-                  <div class="stars"></div>
-                  <div class="hotel-rating"></div>
+                  <div class="type-catalog">МОТЕЛЬ</div><div class="from-catalog">ОТ 2000 Р.</div><br>
+                  <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
+                  <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
+                  <div class="stars">★ ★</div>
+                  <div class="hotel-rating">РЕЙТИНГ: 8,9</div>
               </div>
               <div class="VILLAS">
                   <img src="/img/VAPD.jpg" alt="VILLAS AT POCO DIABLO">
                   <h2>VILLAS AT POCO DIABLO</h2>
-                  <span>АПАРТАМЕНТЫ ОТ 4000 Р.</span>
-                  <a href="#">ПОДРОБНЕЕ</a>
-                  <a href="#">ЗАБРОНИРОВАТЬ</a>
-                  <div class="stars"></div>
-                  <div class="hotel-rating"></div>
+                  <div class="type-catalog">АПАРТАМЕНТЫ</div><div class="from-catalog">ОТ 4000 Р.</div><br>
+                  <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
+                  <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
+                  <div class="stars">★ ★ ★</div>
+                  <div class="hotel-rating">РЕЙТИНГ: 9,2</div>
               </div>
           </div>
       </main>
-      <footer class="main-footer">
+      <footer class="catalog-footer">
           <div class="container-footer clearfix">
               <div class="hashtag">
                   <h2>#VISITSEDONA</h2>
@@ -101,6 +105,5 @@
               </div>
           </div>
       </footer>
-      </div>
   </body>
 </html>

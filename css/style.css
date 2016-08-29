@@ -34,6 +34,9 @@ p {
 
   
 }
+.main-header{
+  background:white;
+}
 .header-navigation {
   padding:1px;
   background:white;
@@ -384,18 +387,23 @@ float:left;
    padding-top:28px;
    padding-bottom:30px;
   width:1200px;
-  height:217px;
-  background: blue;
+  height:186px;
+  background: url(/img/filter-background.jpg);
+   
 }
 .checkbox1 {
+  list-style: none;
   width:240px;
   height:159px;
   margin-left:72px;
   display:block;
-  float:left;
+  float:left; 
+}
+.checkbox1 ul,
+.checkbox2 ul{
+  list-style-type: none;
 }
 .checkbox2 {
-  background:yellow;
   display:block;
   width:287px;
   height:159px;
@@ -407,17 +415,71 @@ float:left;
   display:block;
   float:right;
   margin-right:72px;
-  background:red;
+  color:white;
+  
+}
+.price-btn input[type="text"]{
+  display:inline-block;
+  width:159px;
+  height:35px;
+  text-align:center;
+  border: 2px solid white;
+  background:rgba(255, 255, 255, 0)
+ }
+
+.price-range input{
+  margin-top:20px;
+  width:317px;
+}
+.price-btn input[type="submit"]{
+  margin-left:95px;
+  margin-bottom:33px;
+  margin-top:35px;
+  display:inline-block;
+  width:137px;
+  height:35px;
+  border: 2px solid white;
+  background:rgba(255, 255, 255, 0)
+}
+.price-btn input {
+  color:white;
 }
 .filter2 {
   width:1200px;
   height:86px;
-  background:grey;
+  background:white;
+}
+.found {
+  display:block;
+ font-size:21px;
+  margin-left:72px;
+  float:left;
+  margin-top:30px;
+}
+.sort {
+  margin-top:32px;
+  margin-right:7px;
+}
+.filter2 li{
+
+  list-style-type:none;
+  margin-left:31px;
+  display:inline-block;
+}
+.filter2 .active{
+  text-decoration:none;
+  color:#b3d1e4;
+  border:none;
+  
+}
+.filter2 a{
+  color:#c6c6c6;
+  text-decoration:none;
+  border-bottom: 1px dotted #81b3d2;  
 }
 .result{
   width:1200px;
   height:454px;
-  background:brown;
 }
 .result .amara {
   display:block;
@@ -434,13 +496,41 @@ float:left;
   float:left;
   margin-right:30px;
 }
+.result h2{
+  margin:0px;
+}
+.result a{
+  text-decoration:none;
+  text-align:center;
+  color:white;
+}
+ .more-btn {
+   margin-top:12px;
+  display:inline-block;
+   background:#81b3d2;
+   width:110px;
+}
+.reserv-btn{
+  display:inline-block;
+  background:#766357;
+  width:142px;
+  margin-left:3px; 
+}
+.type-catalog{
+  width:110px;
+  margin-right:5px;
+  display:inline-block;
+}
+.from-catalog{
+ display:inline-block; 
+}
 .DESERT {
   display:block;
   padding: 29px 72px;
   background:white;
   width:1056px;
   height:92px;
-  border-top:1px solid grey;
+  border-top:-1px solid grey;
   border-bottom:1px solid grey;
 }
 .result .DESERT img{
@@ -455,7 +545,7 @@ float:left;
   background:white;
   width:1056px;
   height:92px;
-  border-top:1px solid grey;
+  border-top:-1px solid grey;
   border-bottom:1px solid grey;
 }
 .result .VILLAS img{
@@ -464,6 +554,30 @@ float:left;
   float:left;
   margin-right:30px;
 }
+.stars {
+  font-size:19px;
+  width:110px;
+  height:27px;
+  float:right;
+  position:relative;
+  top:-50px;
+  color:#82b4d3;
+  text-align:right;
+  
+}
+.hotel-rating{
+  background:#f2f2f2;
+  width:110px;
+  height:27px;
+  float:right;
+  position:relative;
+  bottom:-18px;
+  left:110px;
+  color:#666666;
+  text-align:center;
+  font-size:14px;
+  font-weight:normal;
+}
 .header-navigation a {
   font-size:14px;
   display:inline;
@@ -471,13 +585,16 @@ float:left;
   color:black;
   
 }
+
 .header-navigation li{ 
   list-style-type:none;
   display:block;
+  
 }
 .header-navigation ul {
   position:relative;
   padding:0px 0px;
+  margin:0px;
 }
 .header-navigation li .info {
  padding:15px 72px;
@@ -501,8 +618,14 @@ float:left;
 .header-navigation li .hotels {
    padding:15px 72px;
   float:right;
+  
 }
-
+.catalog-footer {
+  height:45px;
+  width:940px;
+  z-index:2;
+  background-color:rgb(255, 255, 255);
+  padding:37px 130px;
 
  .clearfix::after {
   content: "";
