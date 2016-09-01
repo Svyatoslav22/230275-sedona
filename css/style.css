@@ -201,8 +201,8 @@ ul .search-ul{
    margin-left: -284px;
   padding:0px;
 }
-.Arrival-Date input[type="date"],
-.Date-Of-Departure input[type="date"]{
+.Arrival-Date input[type="text"],
+.Date-Of-Departure input[type="text"]{
  width:345px;
 background:#f2f2f2 url(/img/calendar.png) no-repeat 0 290px;
   border:none;
@@ -218,7 +218,7 @@ background:#f2f2f2 url(/img/calendar.png) no-repeat 0 290px;
     font-weight: bold;
 }
 
-}
+
 label {
    font-size: 14px;
     line-height: 26px;
@@ -226,8 +226,19 @@ label {
     font: PTSans;
     font-weight: bold;
 }
-.Arrival-Date input[type="date"]{
+.Arrival-Date input[type="text"]{
   margin-top:55px;
+}
+.Arrival-Date input[type="text"]:hover,
+.Date-Of-Departure input[type="text"]:hover{
+  background-color:#ebebeb;
+  background-image:url("/img/calendar-hover.png");
+}
+.Arrival-Date input[type="text"]:active,
+.Date-Of-Departure input[type="text"]:active{
+  background-color:white;
+  border: 2px solid #e5e5e5;
+  background-image:url("/img/calendar-active.png");
 }
   .search-header button{
   position:relative;
@@ -309,11 +320,22 @@ float:left;
 float:left;
   margin-left:125px;
 }
-.search-btn {
-  
-  
+.search-btn input[type="submit"]{
+  display:inline-block;
+  width:458px;
+  background:#81b3d2;
+  border:none;
+  height:58px;
+  color:white;
+  font-size:21px;
+  font-weight:bold;
 }
-
+.search-btn input[type="submit"]:hover {
+  background:#669ec0;
+}
+.search-btn input[type="submit"]:active {
+  background:#5496bd;
+}
 .main-footer {
   height:45px;
   width:940px;
@@ -349,9 +371,15 @@ float:left;
   float:left;
   width:45px;
   height:45px;
-  
   margin-right:5px;
   background: #81b3d2 url("/img/t.png") no-repeat 50% 50%;
+}
+.social-btn-Twitter:hover{
+  background-color:#669ec0;
+}
+.social-btn-Twitter:active{
+  background-color:#5496bd;
+  background-image: url("/img/active-t.png")
 }
 .social-btn-fb {
   font-size:0;
@@ -363,6 +391,13 @@ float:left;
   margin-right:5px;
   background: #81b3d2 url("/img/f.png") no-repeat 50% 50%; 
 }
+.social-btn-fb:hover{
+  background-color:#669ec0;
+}
+.social-btn-fb:active{
+  background-color:#5496bd;
+  background-image: url("/img/active-f.png")
+}
 .social-btn-youtube {
    font-size:0;
   display:block;
@@ -372,15 +407,37 @@ float:left;
 
   background: #81b3d2 url("/img/u.png") no-repeat 50% 50%; 
 }
+.social-btn-youtube:hover{
+  background-color:#669ec0;
+}
+.social-btn-youtube:active{
+  background-color:#5496bd;
+  background-image: url("/img/active-u.png")
+}
 .HTML-ACADEMY {
-    display:block;
+  display:inline-block;
   width:196px;
   height:45px;
   vertical-align:top;
   float:right;
-  background: url("/img/HTML-ACADEMY.png") no-repeat 50% 50%;
-}
+  font-size:14px;
+  font-weight:normal;
   
+  
+}
+.HTML-ACADEMY a{
+  display:inline-block;
+  width:112px;
+  height:45px;
+  float:right;
+  
+}
+.HTML-ACADEMY span{
+ display:inline-block;
+  font-size:14px;
+  font-weight:normal;
+  margin-top:15px;
+}
  
 /* страница catalog*/
  .filter{
@@ -499,6 +556,12 @@ float:left;
 .result h2{
   margin:0px;
 }
+.result h2:hover{
+  color:#81b3d2;
+}
+.result h2:active{
+  color:#b2b2b2;
+}
 .result a{
   text-decoration:none;
   text-align:center;
@@ -510,11 +573,25 @@ float:left;
    background:#81b3d2;
    width:110px;
 }
+.more-btn:hover{
+  background:#669ec0;
+}
+.more-btn:active{
+  background:#5496bd;
+  color:rgba(255, 255, 255, 0.5);
+}
 .reserv-btn{
   display:inline-block;
   background:#766357;
   width:142px;
   margin-left:3px; 
+}
+.reserv-btn:hover{
+  background:#604e43;
+}
+.reserv-btn:active{
+  background:#503e33;
+  color:rgba(255, 255, 255, 0.5);
 }
 .type-catalog{
   width:110px;
@@ -554,6 +631,8 @@ float:left;
   float:left;
   margin-right:30px;
 }
+
+
 .stars {
   font-size:19px;
   width:110px;
@@ -618,7 +697,21 @@ float:left;
 .header-navigation li .hotels {
    padding:15px 72px;
   float:right;
-  
+ }
+.header-navigation li a:hover {
+  color:#81b3d2;
+}
+.header-navigation li a:active {
+  color:#b2b2b2;
+}
+.header-navigation .active a {
+  color:#766357;
+}
+.header-navigation .active a:hover {
+  color:#75665c;
+}
+.header-navigation .active a:active {
+  color:dbd6d3;
 }
 .catalog-footer {
   height:45px;
@@ -626,7 +719,7 @@ float:left;
   z-index:2;
   background-color:rgb(255, 255, 255);
   padding:37px 130px;
-
+}
  .clearfix::after {
   content: "";
   display: block;
