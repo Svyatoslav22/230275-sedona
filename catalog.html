@@ -11,9 +11,9 @@
         <ul>
             <li><a href="#" class="info">ИНФОРМАЦИЯ</a></li>
             <li><a href="#" class="photo">ФОТО И ВИДЕО</a></li>
-            <li><a href="#" class="logo"><img src="/img/logo.png" alt="лого" width="138" height="70"></a></li>
+            <li><a href="#" class="logo"><img src="img/logo.png" alt="лого" width="138" height="70"></a></li>
             
-            <li><a href="#" class="hotels">ГОСТИННИЦЫ</a></li>
+            <li><a href="#" class="hotels active">ГОСТИННИЦЫ</a></li>
             <li><a href="#" class="site-map">КАРТА ШТАТА</a></li>
         </ul>
     </nav>
@@ -24,26 +24,45 @@
               <div class="checkbox1">
                   <span>ИНФРАСТРУКТУРА</span>
                   <ul>
-                      <li><input type="checkbox" checked>БАССЕЙН</li>
-                      <li><input type="checkbox">ПАРКОВКА</li>
-                      <li><input type="checkbox">WI-FI</li>
+                      <li><input id="pool-checkbox" type="checkbox" checked>
+                        <span class="checkbox-indicator"></span>
+                        <label for="pool-checkbox">БАССЕЙН</label>
+                      </li>
+                    
+                      <li><input id="parking-checkbox" type="checkbox">
+                        <span class="checkbox-indicator"></span>
+                        <label for="parking-checkbox">ПАРКОВКА</label>
+                      </li>
+                      <li><input id="WI-FI-checkbox" type="checkbox">
+                        <span class="checkbox-indicator"></span>
+                        <label for="WI-FI-checkbox">WI-FI</label>
+                      </li>
                   </ul>
               </div>
               <div class="checkbox2">
                   <span>ТИП ЖИЛЬЯ</span>
                   <ul>
-                      <li><input type="checkbox" checked>ГОСТИНИЦА</li>
-                      <li><input type="checkbox" checked>МОТЕЛЬ</li>
-                      <li><input type="checkbox" checked>АПАРТАМЕНТЫ</li>
+                      <li><input id="hotel-checkbox" type="checkbox" checked>
+                        <span class="checkbox-indicator"></span>
+                        <label for="hotel-checkbox">ГОСТИНИЦА</label>
+                      </li>
+                      <li><input id="motel-checkbox" type="checkbox" checked>
+                        <span class="checkbox-indicator"></span>
+                        <label for="motel-checkbox">МОТЕЛЬ</label>
+                      </li>
+                      <li><input id="appartaments-checkbox" type="checkbox" checked>
+                        <span class="checkbox-indicator"></span>
+                        <label for="appartaments-checkbox">АПАРТАМЕНТЫ</label>
+                      </li>
                   </ul>
               </div>
               <div class="price-btn">
                   <span>СТОИМОСТЬ В СУТКИ (Р):</span><br>
                   <input  class="from" type="text" value="ОТ 0"><input class="end3000" type="text" value="ДО 3000">
                   <div class="price-range">
-                    
-                    <input type="range">
-                    
+                    <div class="range-slide1"></div>
+                    <div class="range-line"></div>
+                    <div class="range-slide2"></div>
                   </div>
                   <input cluss="btn-view" type="submit" value="ПОКАЗАТЬ">
                   
@@ -58,12 +77,12 @@
                 <li><a href="#">ПО ТИПУ</a></li>
                 <li><a href="#">ПО РЕЙТИНГУ</a></li>
               </ul>
-              <div class="arrow"></div>
+              <div class="arrow"><a class="arrow-up">▲</a><a class="arrow-down active">▼</a></div>
           </div>
           <div class="result">
               <div class="amara clearfix">
-                  <img src="/img/AR&S.jpg" alt="AMARA RESORT & SPA">
-                  <h2>AMARA RESORT & SPA</h2>
+                  <img src="img/AR&S.jpg" alt="AMARA RESORT & SPA">
+                  <a href="#" class="name-hotel"><h2>AMARA RESORT & SPA</h2></a>
                   <div class="type-catalog">ГОСТИНИЦА</div><div class="from-catalog">ОТ 3500 Р.</div><br>
                   <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
                   <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
@@ -71,8 +90,8 @@
                   <div class="hotel-rating">РЕЙТИНГ: 8,5</div>
               </div>
               <div class="DESERT">
-                  <img src="/img/DQI.jpg" alt="DESERT QUAIL INN">
-                  <h2>DESERT QUAIL INN</h2>
+                  <img src="img/DQI.jpg" alt="DESERT QUAIL INN">
+                  <a href="#" class="name-hotel"><h2>DESERT QUAIL INN</h2></a>
                   <div class="type-catalog">МОТЕЛЬ</div><div class="from-catalog">ОТ 2000 Р.</div><br>
                   <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
                   <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
@@ -80,8 +99,8 @@
                   <div class="hotel-rating">РЕЙТИНГ: 8,9</div>
               </div>
               <div class="VILLAS">
-                  <img src="/img/VAPD.jpg" alt="VILLAS AT POCO DIABLO">
-                  <h2>VILLAS AT POCO DIABLO</h2>
+                  <img src="img/VAPD.jpg" alt="VILLAS AT POCO DIABLO">
+                  <a href="#" class="name-hotel"><h2>VILLAS AT POCO DIABLO</h2></a>
                   <div class="type-catalog">АПАРТАМЕНТЫ</div><div class="from-catalog">ОТ 4000 Р.</div><br>
                   <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
                   <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
@@ -102,7 +121,7 @@
               </div>
               <div class="HTML-ACADEMY">
                 <span>WEBSITE BY</span>
-                  <a class="btn" href="https://htmlacademy.ru"><img src="/img/HTML-ACADEMY.png" alt="HTML-ACADEMY"></a>
+                  <a class="btn" href="https://htmlacademy.ru"></a>
               </div>
           </div>
       </footer>

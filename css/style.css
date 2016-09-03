@@ -196,15 +196,16 @@ ul .search-ul{
   height:395px;
   width:568px;
   background:white;
-   top:2127px;
+   top:2171px;
    left:50%;
    margin-left: -284px;
   padding:0px;
+  z-index:10;
 }
 .Arrival-Date input[type="text"],
 .Date-Of-Departure input[type="text"]{
  width:345px;
-background:#f2f2f2 url(/img/calendar.png) no-repeat 0 290px;
+background:#f2f2f2 url("../img/calendar.png") no-repeat 0 290px;
   border:none;
   padding: 10px 12px;
   padding-right: 40px;
@@ -232,13 +233,13 @@ label {
 .Arrival-Date input[type="text"]:hover,
 .Date-Of-Departure input[type="text"]:hover{
   background-color:#ebebeb;
-  background-image:url("/img/calendar-hover.png");
+  background-image:url("../img/calendar-hover.png");
 }
-.Arrival-Date input[type="text"]:active,
-.Date-Of-Departure input[type="text"]:active{
+.Arrival-Date input[type="text"]:focus,
+.Date-Of-Departure input[type="text"]:focus{
   background-color:white;
   border: 2px solid #e5e5e5;
-  background-image:url("/img/calendar-active.png");
+  background-image:url("../img/calendar-active.png");
 }
   .search-header button{
   position:relative;
@@ -247,7 +248,7 @@ label {
   height:85px;
   text-align:center;
   padding:1px;
-   top:19px;
+   top:17px;
     left:-20px;
     color:white;
     font-size: 21px;
@@ -272,11 +273,11 @@ ul {
 }
 
 
-.people-number  {
+.people-number-grown  {
   text-align:center;
   display:inline-block;
   width:38px;
-  height:38px;
+  height:36px;
   background:#f2f2f2;
   border:none;
 }
@@ -317,8 +318,18 @@ float:left;
   border:none; 
 }
 .child-class{
-float:left;
-  margin-left:125px;
+  
+  width:178px;
+  float:left;
+  display:inline-block;
+}
+.people-number-child  {
+  text-align:center;
+  display:inline-block;
+  width:38px;
+  height:36px;
+  background:#f2f2f2;
+  border:none;
 }
 .search-btn input[type="submit"]{
   display:inline-block;
@@ -341,7 +352,7 @@ float:left;
   width:940px;
   z-index:2;
   position:absolute;
-  bottom:-2207px;
+  bottom:-2250px;
   background-color:rgba(255, 255, 255, 0.5);
   padding:37px 130px;
 }
@@ -372,14 +383,14 @@ float:left;
   width:45px;
   height:45px;
   margin-right:5px;
-  background: #81b3d2 url("/img/t.png") no-repeat 50% 50%;
+  background: #81b3d2 url("../img/t.png") no-repeat 50% 50%;
 }
 .social-btn-Twitter:hover{
   background-color:#669ec0;
 }
 .social-btn-Twitter:active{
   background-color:#5496bd;
-  background-image: url("/img/active-t.png")
+  background-image: url("../img/active-t.png")
 }
 .social-btn-fb {
   font-size:0;
@@ -389,14 +400,14 @@ float:left;
   height:45px;
   
   margin-right:5px;
-  background: #81b3d2 url("/img/f.png") no-repeat 50% 50%; 
+  background: #81b3d2 url("../img/f.png") no-repeat 50% 50%; 
 }
 .social-btn-fb:hover{
   background-color:#669ec0;
 }
 .social-btn-fb:active{
   background-color:#5496bd;
-  background-image: url("/img/active-f.png")
+  background-image: url("../img/active-f.png")
 }
 .social-btn-youtube {
    font-size:0;
@@ -405,14 +416,14 @@ float:left;
   width:45px;
   height:45px;
 
-  background: #81b3d2 url("/img/u.png") no-repeat 50% 50%; 
+  background: #81b3d2 url("../img/u.png") no-repeat 50% 50%; 
 }
 .social-btn-youtube:hover{
   background-color:#669ec0;
 }
 .social-btn-youtube:active{
   background-color:#5496bd;
-  background-image: url("/img/active-u.png")
+  background-image: url("../img/active-u.png")
 }
 .HTML-ACADEMY {
   display:inline-block;
@@ -430,6 +441,7 @@ float:left;
   width:112px;
   height:45px;
   float:right;
+  background-image: url("../img/HTML-ACADEMY.png")  ;
   
 }
 .HTML-ACADEMY span{
@@ -438,14 +450,19 @@ float:left;
   font-weight:normal;
   margin-top:15px;
 }
- 
+.HTML-ACADEMY a:hover{
+  background-image: url("../img/HTML-ACADEMY-HOVER.png")  ;
+}
+.HTML-ACADEMY a:active{
+  background-image: url("../img/HTML-ACADEMY-ACTIVE.png") ;
+}
 /* страница catalog*/
  .filter{
    padding-top:28px;
    padding-bottom:30px;
   width:1200px;
-  height:186px;
-  background: url(/img/filter-background.jpg);
+  height:158px;
+  background:blue url("../img/filter-background.jpg") no-repeat 50% 50%;
    
 }
 .checkbox1 {
@@ -466,7 +483,32 @@ float:left;
   height:159px;
   float:left;
 }
+.checkbox1 label,
+.checkbox2 label{
+  font-size:14px;
+  font-weight:normal;
+}
+.checkbox1 input[type="checkbox"],
+.checkbox2 input[type="checkbox"]{
+  display:none;
+  
+}
+.checkbox1 label,
+.checkbox2 label{
+  cursor:pointer;
+}
+.checkbox1:not(checked) + label:before {
+  content: '';
+  background: url("../img/hover.png");
+   position: absolute;
+  
+}
+.checkbox1:checked + label:before {
+  background: url("../img/checked-hover.png");
+}
+
 .price-btn {
+  position:relative;
   width:328px;
   height:159px;
   display:block;
@@ -484,10 +526,38 @@ float:left;
   background:rgba(255, 255, 255, 0)
  }
 
-.price-range input{
+.price-range .range-line{
+  background:white;
   margin-top:20px;
+  height:2px;
   width:317px;
 }
+.range-slide1{
+  height:2px;
+  width:2px;
+  background:#ababab;
+  border-radius:20px;
+  border:10px solid white;
+  position:absolute;
+  top:77px;
+  cursor:pointer;
+}
+.range-slide2{
+  height:2px;
+  width:2px;
+  background:#ababab;
+  border-radius:20px;
+  border:10px solid white; 
+  position:absolute;
+  top:77px;
+  right:53px;
+  cursor:pointer;
+}
+.range-slide1:hover,
+.range-slide2:hover{
+  background:#7191af;  
+}
+
 .price-btn input[type="submit"]{
   margin-left:95px;
   margin-bottom:33px;
@@ -497,14 +567,24 @@ float:left;
   height:35px;
   border: 2px solid white;
   background:rgba(255, 255, 255, 0)
+    
 }
 .price-btn input {
+  border-radius:2px;
   color:white;
+}
+.price-btn input[type="text"] {
+
+}
+.price-btn input[type="submit"]:hover{
+  color:black;
+  background:white;
 }
 .filter2 {
   width:1200px;
   height:86px;
   background:white;
+  position:relative;
 }
 .found {
   display:block;
@@ -534,6 +614,45 @@ float:left;
   text-decoration:none;
   border-bottom: 1px dotted #81b3d2;  
 }
+.filter2 a:hover{
+  color:#a3c7de;
+  text-decoration:none;
+  border-bottom: 1px dotted #a3c7de;  
+}
+.filter2 a:active{
+  color:black;
+  text-decoration:none;
+  
+}
+.arrow a{
+  cursor:pointer;
+  font-size:14px;
+  line-height:21px;
+  text-decoration:none;
+  border:0px solid white;
+  position:absolute;
+  left:1092px;
+  top:35px;
+  
+}
+.arrow-down{
+  margin-left:20px;  
+}
+.arrow a:hover{
+  color:black;
+  text-decoration:none;
+   border:0px solid white;
+}
+.arrow a:active {
+  color:#81b3d2;
+  text-decoration:none;
+   border:0px solid white;
+}
+.arrow .active a {
+  color:#81b3d2;
+  text-decoration:none;
+   border:0px solid white;
+}
 .result{
   width:1200px;
   height:454px;
@@ -553,6 +672,7 @@ float:left;
   float:left;
   margin-right:30px;
 }
+
 .result h2{
   margin:0px;
 }
@@ -566,6 +686,10 @@ float:left;
   text-decoration:none;
   text-align:center;
   color:white;
+}
+ .name-hotel h2{
+  color:black;
+   text-align:left;
 }
  .more-btn {
    margin-top:12px;
