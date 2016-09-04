@@ -3,6 +3,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
+   <link href="css/symbols-sedona.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!»</title>
   </head>
@@ -11,11 +12,11 @@
     <header class="main-header">
     <nav class="header-navigation">
         <ul>
-            <li><a href="#" class="info">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#" class="photo">ФОТО И ВИДЕО</a></li>
-            <li><a href="#" class="logo"><img src="img/logo.png" alt="лого" width="138" height="70"></a></li>
-            <li><a href="#" class="site-map">КАРТА ШТАТА</a></li>
-            <li><a href="#" class="hotels">ГОСТИННИЦЫ</a></li>
+            <li><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li><a href="#">ФОТО И ВИДЕО</a></li>
+            <li><a href="#" ><img src="img/logo.png" alt="лого" width="138" height="70"></a></li>
+            <li><a href="#">КАРТА ШТАТА</a></li>
+            <li><a href="#">ГОСТИННИЦЫ</a></li>
         </ul>
     </nav>
       
@@ -103,28 +104,30 @@
                         <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
                       </div>
                      <ul class="search-ul">
-                         <li><form class="search">
+                         <li class="search"><form class="search">
              
                                <div class="Arrival-Information">
-                                  <div Class="Arrival-Date">
-                                     <label for="Arrival-Date">ДАТА ЗАЕЗДА:</label>
+                                  <div Class="Arrival-Date clearfix">
+                                     <label for="Arrival-Date" >ДАТА ЗАЕЗДА:</label>
                                      <input class="date" id="Arrival-Date" type="text" value="24 апреля 2016">
+                                     <div class="calendar1"></div>
                                   </div>
-                                  <div class="Date-Of-Departure">
+                                  <div class="Date-Of-Departure clearfix">
                                      <label for="Date-Of-Departure">ДАТА ВЫЕЗДА:</label>
                                      <input class="date" id="Date-Of-Departure" type="text" value="08 июля 2016" >
+                                     <div class="calendar2"></div>
                                   </div>
                                   <div class="grown-class">
-                                     <label for="grown">ВЗРОСЛЫЕ</label>
-                                    <div class="grown-plus"></div>
+                                     <label for="grown">ВЗРОСЛЫЕ:</label>
+                                    <div class="grown-minus"><span></span></div>
                                      <input id="grown" class="people-number-grown"  type="text" pattern="[0-9]*" value="2" min="0">
-                                    <div class="grown-minus"></div>
+                                    <div class="grown-plus"><span></span></div>
                                   </div>
                                   <div class="child-class">
-                                     <label for="child">ДЕТИ</label>
-                                    <div class="cheld-plus"></div>
+                                     <label for="child">ДЕТИ:</label>
+                                    <div class="child-minus"><span></span></div>
                                      <input id="child" class="people-number-child"  type="text" pattern="[0-9]*" value="0" min="0">
-                                    <div class="child-minus"></div>
+                                    <div class="child-plus"><span></span></div>
                                   </div>
                                </div>
                               <div class="search-btn">
@@ -137,7 +140,7 @@
           </div>
           </div>
           <div class="map-main">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18052164407!2d-111.8302437357105!3d34.85437335642629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+Arizona+86336%2C+Stati+Uniti!5e0!3m2!1sit!2sfr!4v1462890121921" width="1200" height="580" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18052164407!2d-111.8302437357105!3d34.85437335642629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+Arizona+86336%2C+Stati+Uniti!5e0!3m2!1sit!2sfr!4v1462890121921" width="1200" height="593" style="border:0" allowfullscreen></iframe>
           </div>
          
           
@@ -154,7 +157,7 @@
               </div>
               <div class="HTML-ACADEMY">
                 <span>WEBSITE BY</span>
-                  <a class="btn" href="https://htmlacademy.ru"><img src="img/HTML-ACADEMY.png" alt="HTML-ACADEMY"></a>
+                  <a class="btn" href="https://htmlacademy.ru"></a>
               </div>
           </div>
       </footer>

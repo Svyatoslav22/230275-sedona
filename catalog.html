@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
+   <link href="css/symbols-sedona.css" rel="stylesheet">
     <meta charset="utf-8">
-    <title>"Поиск отселей СЕДОНА"</title>
+    <title>Поиск отелей Седона</title>
   </head>
   <body>
         <header class="main-header">
     <nav class="header-navigation clearfix">
         <ul>
-            <li><a href="#" class="info">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#" class="photo">ФОТО И ВИДЕО</a></li>
-            <li><a href="#" class="logo"><img src="img/logo.png" alt="лого" width="138" height="70"></a></li>
+            <li><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li><a href="#">ФОТО И ВИДЕО</a></li>
+            <li><a href="index.html" class="logo"><img src="img/logo.png" alt="лого" width="138" height="70"></a></li>
             
-            <li><a href="#" class="hotels active">ГОСТИННИЦЫ</a></li>
-            <li><a href="#" class="site-map">КАРТА ШТАТА</a></li>
+            <li><a href="#" class="active">ГОСТИННИЦЫ</a></li>
+            <li><a href="#">КАРТА ШТАТА</a></li>
         </ul>
     </nav>
       
@@ -24,17 +26,17 @@
               <div class="checkbox1">
                   <span>ИНФРАСТРУКТУРА</span>
                   <ul>
-                      <li><input id="pool-checkbox" type="checkbox" checked>
-                        <span class="checkbox-indicator"></span>
+                      <li><input class="checkbox" id="pool-checkbox" type="checkbox" checked>
+                        
                         <label for="pool-checkbox">БАССЕЙН</label>
                       </li>
                     
-                      <li><input id="parking-checkbox" type="checkbox">
-                        <span class="checkbox-indicator"></span>
+                      <li><input class="checkbox" id="parking-checkbox" type="checkbox">
+                        
                         <label for="parking-checkbox">ПАРКОВКА</label>
                       </li>
-                      <li><input id="WI-FI-checkbox" type="checkbox">
-                        <span class="checkbox-indicator"></span>
+                      <li><input class="checkbox" id="WI-FI-checkbox" type="checkbox">
+                        
                         <label for="WI-FI-checkbox">WI-FI</label>
                       </li>
                   </ul>
@@ -42,23 +44,24 @@
               <div class="checkbox2">
                   <span>ТИП ЖИЛЬЯ</span>
                   <ul>
-                      <li><input id="hotel-checkbox" type="checkbox" checked>
-                        <span class="checkbox-indicator"></span>
+                      <li><input class="checkbox" id="hotel-checkbox" type="checkbox" checked>
+                        
                         <label for="hotel-checkbox">ГОСТИНИЦА</label>
                       </li>
-                      <li><input id="motel-checkbox" type="checkbox" checked>
-                        <span class="checkbox-indicator"></span>
+                      <li><input class="checkbox" id="motel-checkbox" type="checkbox" checked>
+                        
                         <label for="motel-checkbox">МОТЕЛЬ</label>
                       </li>
-                      <li><input id="appartaments-checkbox" type="checkbox" checked>
-                        <span class="checkbox-indicator"></span>
+                      <li><input class="checkbox" id="appartaments-checkbox" type="checkbox" checked>
+                        
                         <label for="appartaments-checkbox">АПАРТАМЕНТЫ</label>
                       </li>
                   </ul>
               </div>
               <div class="price-btn">
                   <span>СТОИМОСТЬ В СУТКИ (Р):</span><br>
-                  <input  class="from" type="text" value="ОТ 0"><input class="end3000" type="text" value="ДО 3000">
+                  <div class="from-end3000"><input  class="from" type="text" value="ОТ 0"><input class="end3000" type="text" value="ДО 3000"></div>
+                  <div class="line"></div>
                   <div class="price-range">
                     <div class="range-slide1"></div>
                     <div class="range-line"></div>
@@ -109,7 +112,7 @@
               </div>
           </div>
       </main>
-      <footer class="catalog-footer">
+      <footer class="main-footer">
           <div class="container-footer clearfix">
               <div class="hashtag">
                   <h2>#VISITSEDONA</h2>
