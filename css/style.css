@@ -654,7 +654,7 @@ ul {
   width:112px;
   height:39px;
   float:right;
-  background-image: url("../img/HTML-ACADEMY.png")  ;
+  background-image: url("../img/sprite.png")  ;
 }
 .HTML-ACADEMY span{
  display:inline-block;
@@ -663,10 +663,12 @@ ul {
   margin-top:8px;
 }
 .HTML-ACADEMY a:hover{
-  background-image: url("../img/HTML-ACADEMY-HOVER.png")  ;
+  background-image: url("../img/sprite.png")  ;
+  background-position: 0 -39px;
 }
 .HTML-ACADEMY a:active{
-  background-image: url("../img/HTML-ACADEMY-ACTIVE.png") ;
+  background-image: url("../img/sprite.png") ;
+  background-position: 0 39px;
 }
 /* страница catalog*/
  .filter{
@@ -1066,7 +1068,7 @@ ul {
 .header-navigation li a:active {
   color:#b2b2b2;
 }
-.header-navigation .active a {
+.header-navigation .active a{
   color:#766357;
 }
 .header-navigation .active a:hover {
