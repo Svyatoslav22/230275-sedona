@@ -1,35 +1,35 @@
 body {
   font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 12px;
-    line-height: 26px;
-    color: black;
-    font: PTSans;
-    font-weight: bold; 
-    width:1200px;
-    margin: 0 auto;
-   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-size: 12px;
+  line-height: 26px;
+  color: black;
+  font: PTSans;
+  font-weight: bold; 
+  width:1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 h2 {
-    font-size: 21px;
+  font-size: 21px;
 }
 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 .5reasons,
 .2reason {
-    color: white;
+  color: white;
 }
 p {
-    font-weight: normal;
+  font-weight: normal;
 }
 .search-header {
-    color: white;
+  color: white;
 }
 .search-btn {
-    color: white;
+  color: white;
 }
 
 
@@ -205,47 +205,47 @@ ul .search-ul{
   background:white;
   padding:55px;
   z-index:10;
+    display: none;
+    list-style: none;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
 }
-
+.hidden-block{
+  display: block;
+}
 .Arrival-Date input[type="text"],
 .Date-Of-Departure input[type="text"]{
   border: 2px solid #f2f2f2;
   width: 289px;
   height: 22px;
- 
-background:#f2f2f2 ;
-
+  background:#f2f2f2 ;
   padding: 10px 12px;
   padding-right: 40px;
-    margin-bottom: 29px;
-    font-size: 14px;
-    line-height: 26px;
-    color: black;
-    font: PTSans;
-    font-weight: bold;
-    float: right;
+  margin-bottom: 29px;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font: PTSans;
+  font-weight: bold;
+  float: right;
 }
-
-
 .Arrival-Date label {
-   font-size: 14px;
-    line-height: 26px;
-    color: black;
-    font: PTSans;
-    font-weight: bold;
-    display: inline-block;
-    float: left;
-    padding-top: 10px;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font: PTSans;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
+  padding-top: 10px;
 }
 .Date-Of-Departure label {
-   font-size: 14px;
-    line-height: 26px;
-    color: black;
-    font: PTSans;
-    font-weight: bold;
-    display: inline-block;
-    float: left;
-    padding-top: 10px;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font: PTSans;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
 }
 .Arrival-Date input[type="text"]:hover,
 .Date-Of-Departure input[type="text"]:hover{
@@ -265,78 +265,79 @@ background:#f2f2f2 ;
 
 .calendar1{
   height:21px;
-    width:22px;
+  width:22px;
   position:absolute;
   top:66px;
   right:85px;
 }
 .calendar2{
   height:21px;
-    width:22px;
+  width:22px;
   position:absolute;
   top:141px;
   right:85px;
 }
 .calendar1:before,
 .calendar2:before{
-    content: "\e800"; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  content: "\e800"; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:21px;
-    color:#c2c2c2;
+  color:#c2c2c2;
 }
 .Arrival-Date input[type="text"]:hover + .calendar1:before,
 .Date-Of-Departure input[type="text"]:hover + .calendar2:before {
-    content: "\e800"; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
-    font-size:21px;
-    color:black;
+  content: "\e800"; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
+  font-size:21px;
+  color:black;
 }
 .Arrival-Date input[type="text"]:focus + .calendar1:before,
 .Date-Of-Departure input[type="text"]:focus + .calendar2:before {
-    content: "\e800"; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
-    font-size:21px;
-    color:#b3d1e4;
+  content: "\e800"; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
+  font-size:21px;
+  color:#b3d1e4;
 }
 .main-ul{
-    position: relative;
-    top: 19px;
-    left: 315px;
+  position: relative;
+  top: 17px;
+  left: 315px;
   margin:0;
-   width:568px;
+  width:568px;
   height: 481px;
-    padding: 0px;
+  padding: 0px;
+  list-style: none;
+  outline: none;
 }
-  .search-header button{
- 
+.button{
+  outline: none;
+}
+.search-header button{
+  cursor: pointer;
   background:#766357;
   width:568px;
   height:85px;
   text-align:center;
-;
-    color:white;
-    font-size: 21px;
-    line-height: 26px;
-    color: white;
-    font: PTSans;
-    font-weight: bold;
-    border:none;
+  outline: none;
+  color:white;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+  font: PTSans;
+  font-weight: bold;
+  border:none;
 } 
+.search-header{
+  outline: none;
+}
 ul {
   margin-left:0px;
-}
-
-
-
-.search-header:active .search-ul{
-  display:block;
-  
 }
 .search-header h2 {
   margin-top:33px;
@@ -354,133 +355,133 @@ ul {
 }
 .child-plus>span:before{
   content:"\e801";
-    left:488px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:488px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:#a9a9a9;
 }
 .child-plus:hover span:before{
   content:"\e801";
-    left:488px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:488px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:black;
 }
 .child-plus:active span:before{
   content:"\e801";
-    left:488px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:488px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:#81b3d2;
 }
 .child-minus>span:before{
   content:"\e802";
-    left:414px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:414px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:#a9a9a9;
 }
 .child-minus:hover span:before{
   content:"\e802";
-    left:414px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:414px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:black;
 }
 .child-minus:active span:before{
   content:"\e802";
-    left:414px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:414px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:#81b3d2;
 }
 .grown-plus>span:before{
   content:"\e801";
-    left:258px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:258px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:#a9a9a9;
 }
 .grown-plus:hover span:before{
   content:"\e801";
-    left:258px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:258px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:black;
 }
 .grown-plus:active span:before{
   content:"\e801";
-    left:258px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:258px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:#81b3d2;
 }
 .grown-minus>span:before{
   content:"\e802";
-    left:184px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:184px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:#a9a9a9;
 }
 .grown-minus:hover span:before{
   content:"\e802";
-    left:184px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:184px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:black;
 }
 .grown-minus:active span:before{
   content:"\e802";
-    left:184px;
-    bottom: 158px;
-    position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  left:184px;
+  bottom: 158px;
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:14px;
   color:#81b3d2;
 }
@@ -494,7 +495,7 @@ ul {
 }
 .grown-minus {
   vertical-align:top;
- display:inline-block;
+  display:inline-block;
   width:38px;
   height:38px;
   background:#f2f2f2;
@@ -534,22 +535,22 @@ ul {
   outline: none;
 }
 .child-class label {
-   font-size: 14px;
-    line-height: 26px;
-    color: black;
-    font: PTSans;
-    font-weight: bold;
-    display: inline-block;
-    margin-right: 25px;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font: PTSans;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 25px;
 }
 .grown-class label {
-   font-size: 14px;
-    line-height: 26px;
-    color: black;
-    font: PTSans;
-    font-weight: bold;
-    display: inline-block;
-    margin-right: 54px;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font: PTSans;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 54px;
 }
 .search-btn input[type="submit"]{
   display:inline-block;
@@ -573,25 +574,20 @@ ul {
   width:940px;
   z-index:2;
   position:relative;
-  
   background-color:rgba(255, 255, 255, 0.5);
   padding:37px 130px;
 }
-
 .hashtag{
   display:block;
   min-width:137px;
   height:45px;
-  
   vertical-align:top;
   float:left;
  }
-
 .social {
-    display:block;
+  display:block;
   min-width:137px;
   height:45px;
-  
   vertical-align:top;
   float:left;
   margin-left:254px;
@@ -619,7 +615,6 @@ ul {
   float:left;
   width:45px;
   height:45px;
-  
   margin-right:5px;
   background: #81b3d2 url("../img/f.png") no-repeat 50% 50%; 
 }
@@ -631,12 +626,11 @@ ul {
   background-image: url("../img/active-f.png")
 }
 .social-btn-youtube {
-   font-size:0;
+  font-size:0;
   display:block;
   float:left;
   width:45px;
   height:45px;
-
   background: #81b3d2 url("../img/u.png") no-repeat 50% 50%; 
 }
 .social-btn-youtube:hover{
@@ -654,8 +648,6 @@ ul {
   float:right;
   font-size:14px;
   font-weight:normal;
-  
-  
 }
 .HTML-ACADEMY a{
   display:inline-block;
@@ -663,7 +655,6 @@ ul {
   height:39px;
   float:right;
   background-image: url("../img/HTML-ACADEMY.png")  ;
-  
 }
 .HTML-ACADEMY span{
  display:inline-block;
@@ -679,7 +670,7 @@ ul {
 }
 /* страница catalog*/
  .filter{
-   padding-top:28px;
+  padding-top:28px;
    padding-bottom:30px;
   width:1200px;
   height:158px;
@@ -688,7 +679,7 @@ ul {
 }
 .checkbox1 span,
 .checkbox2 span{
-    color: white;
+  color: white;
 }
 .checkbox1 {
   list-style: none;
@@ -717,31 +708,34 @@ ul {
 }
  
 .checkbox:not(checked) { 
-position: absolute; 
-opacity: 0; 
+  position: absolute; 
+  opacity: 0; 
 } 
 .checkbox:not(checked) + label{ 
-position:relative;
+  position:relative;
 } 
 .checkbox:not(checked) + label::before{ 
-content: '\2610'; 
+  content: '\2610'; 
   left:-25px;
-position: absolute; 
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  position: absolute; 
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
   font-size:26px;
   color:white;
 } 
 .checkbox:checked + label::before{ 
-content: '\2611'; 
-position: absolute;
+  content: '\2611'; 
+  position: absolute;
   left:-25px;
-    font-weight:normal;
-    font-style:normal;
-    font-family:"symbols-sedona";
+  font-weight:normal;
+  font-style:normal;
+  font-family:"symbols-sedona";
 }
 .checkbox:active + label:before{
+  color: #6a6a6a;
+}
+.checkbox:active + label{
   color: #6a6a6a;
 }
 .price-btn {
@@ -752,20 +746,19 @@ position: absolute;
   float:right;
   margin-right:72px;
   color:white;
-  
 }
 .line{
-    position:absolute;
-    width: 2px;
-    height:22px;
-    background: white;
-    top: 35px;
-    right:165px;
+  position:absolute;
+  width: 2px;
+  height:22px;
+  background: white;
+  top: 35px;
+  right:165px;
 }
 .from-end3000{
-    border:2px solid white;
-    border-radius: 2px;
-    width:318px;
+  border:2px solid white;
+  border-radius: 2px;
+  width:318px;
 }
 .price-btn input[type="text"]{
   display:inline-block;
@@ -849,7 +842,6 @@ position: absolute;
   margin-right:7px;
 }
 .filter2 li{
-
   list-style-type:none;
   margin-left:31px;
   display:inline-block;
@@ -858,7 +850,6 @@ position: absolute;
   text-decoration:none;
   color:#b3d1e4;
   border:none;
-  
 }
 .filter2 a{
   color:#c6c6c6;
@@ -873,7 +864,6 @@ position: absolute;
 .filter2 a:active{
   color:black;
   text-decoration:none;
-  
 }
 .arrow a{
   cursor:pointer;
@@ -884,7 +874,6 @@ position: absolute;
   position:absolute;
   left:1092px;
   top:35px;
-  
 }
 .arrow-down{
   margin-left:20px;  
@@ -892,17 +881,17 @@ position: absolute;
 .arrow a:hover{
   color:black;
   text-decoration:none;
-   border:0px solid white;
+  border:0px solid white;
 }
 .arrow a:active {
   color:#81b3d2;
   text-decoration:none;
-   border:0px solid white;
+  border:0px solid white;
 }
 .arrow .active a {
   color:#81b3d2;
   text-decoration:none;
-   border:0px solid white;
+  border:0px solid white;
 }
 .result{
   width:1200px;
@@ -940,13 +929,14 @@ position: absolute;
 }
  .name-hotel h2{
   color:black;
-   text-align:left;
+  text-align:left;
+  display: inline-block;
 }
  .more-btn {
-   margin-top:12px;
+  margin-top:12px;
   display:inline-block;
-   background:#81b3d2;
-   width:110px;
+  background:#81b3d2;
+  width:110px;
 }
 .more-btn:hover{
   background:#669ec0;
@@ -1006,8 +996,6 @@ position: absolute;
   float:left;
   margin-right:30px;
 }
-
-
 .stars {
   font-size:19px;
   width:110px;
@@ -1017,7 +1005,6 @@ position: absolute;
   top:-50px;
   color:#82b4d3;
   text-align:right;
-  
 }
 .hotel-rating{
   background:#f2f2f2;
@@ -1040,13 +1027,11 @@ position: absolute;
   display:inline;
   text-decoration:none;
   color:black;
-  
 }
 
 .header-navigation li{ 
   list-style-type:none;
   display:block;
-  
 }
 .header-navigation ul {
   position:relative;
@@ -1091,10 +1076,10 @@ position: absolute;
   color:#dbd6d3;
 }
 @font-face {
-    font-family:"symbols-sedona";
-    url("../fonts/symbols-sedona.woff") format("woff");
-    font-weight:normal;
-    font-style:normal;
+  font-family:"symbols-sedona";
+  src:url("../fonts/symbols-sedona.woff");
+  font-weight:normal;
+  font-style:normal;
 }
 
  .clearfix::after {

@@ -3,7 +3,6 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
-   <link href="css/symbols-sedona.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!»</title>
   </head>
@@ -11,7 +10,7 @@
     <div class="wrapper">
     <header class="main-header">
     <nav class="header-navigation">
-        <ul>
+        <ul class="clearfix">
             <li><a href="#">ИНФОРМАЦИЯ</a></li>
             <li><a href="#">ФОТО И ВИДЕО</a></li>
             <li><a href="#" ><img src="img/logo.png" alt="лого" width="138" height="70"></a></li>
@@ -99,51 +98,49 @@
               <p>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
               И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
                <div>
-              <ul class="main-ul">   
-                 <li> <div class="search-header">
-                        <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-                      </div>
-                     <ul class="search-ul">
-                         <li class="search"><form class="search">
+                   <ul class="main-ul">   
+                       <li> <div class="search-header">
+                                <button  type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+                            </div>
+                           <ul class="search-ul">
+                               <li class="search"><form class="search">
              
-                               <div class="Arrival-Information">
-                                  <div Class="Arrival-Date clearfix">
-                                     <label for="Arrival-Date" >ДАТА ЗАЕЗДА:</label>
-                                     <input class="date" id="Arrival-Date" type="text" value="24 апреля 2016">
-                                     <div class="calendar1"></div>
-                                  </div>
-                                  <div class="Date-Of-Departure clearfix">
-                                     <label for="Date-Of-Departure">ДАТА ВЫЕЗДА:</label>
-                                     <input class="date" id="Date-Of-Departure" type="text" value="08 июля 2016" >
-                                     <div class="calendar2"></div>
-                                  </div>
-                                  <div class="grown-class">
-                                     <label for="grown">ВЗРОСЛЫЕ:</label>
-                                    <div class="grown-minus"><span></span></div>
-                                     <input id="grown" class="people-number-grown"  type="text" pattern="[0-9]*" value="2" min="0">
-                                    <div class="grown-plus"><span></span></div>
-                                  </div>
-                                  <div class="child-class">
-                                     <label for="child">ДЕТИ:</label>
-                                    <div class="child-minus"><span></span></div>
-                                     <input id="child" class="people-number-child"  type="text" pattern="[0-9]*" value="0" min="0">
-                                    <div class="child-plus"><span></span></div>
-                                  </div>
-                               </div>
+                                   <div class="Arrival-Information">
+                                       <div Class="Arrival-Date clearfix">
+                                           <label for="Arrival-Date" >ДАТА ЗАЕЗДА:</label>
+                                           <input class="date" id="Arrival-Date" type="text" value="24 апреля 2016">
+                                           <div class="calendar1"></div>
+                                       </div>
+                                       <div class="Date-Of-Departure clearfix">
+                                           <label for="Date-Of-Departure">ДАТА ВЫЕЗДА:</label>
+                                           <input class="date" id="Date-Of-Departure" type="text" value="08 июля 2016" >
+                                           <div class="calendar2"></div>
+                                       </div>
+                                       <div class="grown-class">
+                                           <label for="grown">ВЗРОСЛЫЕ:</label>
+                                           <div class="grown-minus"><span></span></div>
+                                           <input id="grown" class="people-number-grown"  type="text" pattern="[0-9]*" value="2">
+                                           <div class="grown-plus"><span></span></div>
+                                       </div>
+                                       <div class="child-class">
+                                           <label for="child">ДЕТИ:</label>
+                                           <div class="child-minus"><span></span></div>
+                                           <input id="child" class="people-number-child"  type="text" pattern="[0-9]*" value="0">
+                                           <div class="child-plus"><span></span></div>
+                                       </div>
+                                   </div>
                               <div class="search-btn">
                                  <input type="submit" value="НАЙТИ">
                               </div>
-                            </form></li>
+                               </form></li>
+                           </ul>
+                       </li>
                    </ul>
-                   </li>
-            </ul>
-          </div>
+               </div>
           </div>
           <div class="map-main">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18052164407!2d-111.8302437357105!3d34.85437335642629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+Arizona+86336%2C+Stati+Uniti!5e0!3m2!1sit!2sfr!4v1462890121921" width="1200" height="593" style="border:0" allowfullscreen></iframe>
           </div>
-         
-          
       </main>
       <footer class="main-footer">
           <div class="container-footer clearfix">
@@ -162,5 +159,6 @@
           </div>
       </footer>
       </div>
+      <script src="js/main.js"></script>
   </body>
 </html>
