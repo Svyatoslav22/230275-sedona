@@ -278,14 +278,14 @@ ul .search-ul{
   width:22px;
   position:absolute;
   top:66px;
-  right:85px;
+  right:65px;
 }
 .calendar2{
   height:21px;
   width:22px;
   position:absolute;
   top:141px;
-  right:85px;
+  right:65px;
 }
 .calendar1:before,
 .calendar2:before{
@@ -823,8 +823,9 @@ ul {
   width:137px;
   height:35px;
   border: 2px solid white;
-  background:rgba(255, 255, 255, 0)
-    
+  background:rgba(255, 255, 255, 0);
+  outline: none;
+  cursor: pointer;
 }
 .price-btn input {
   border-radius:2px;
@@ -1079,13 +1080,13 @@ ul {
 .header-navigation li a:active {
   color:#b2b2b2;
 }
-.header-navigation .active a{
+.active-menu a{
   color:#766357;
 }
-.header-navigation .active a:hover {
+.active-menu a:hover {
   color:#75665c;
 }
-.header-navigation .active a:active {
+.active-menu a:active {
   color:#dbd6d3;
 }
 @font-face {
