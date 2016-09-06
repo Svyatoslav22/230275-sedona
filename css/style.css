@@ -156,7 +156,7 @@ min-height:154px;
   background:#eeeeee;
   width:256px;
   height:160px;
-    float:left;
+  float:left;
   padding:48px 72px;
 }
 .reason4 {
@@ -165,7 +165,7 @@ text-align:center;
   background:#eeeeee;
   width:264px;
   height:160px;
-    float:left;
+  float:left;
   padding:48px 68px;
 }
 .reason5 {
@@ -189,13 +189,13 @@ text-align:center;
 
 .map-main {
   width:1200px;
-    height:593px;
+  height:593px;
   margin-bottom:-119px;
   z-index:1;
 }
 .search li{
-    width: 458px;
-    height: 285px;
+  width: 458px;
+  height: 285px;
 }
 ul .search-ul{
   position: absolute;
@@ -205,11 +205,21 @@ ul .search-ul{
   background:white;
   padding:55px;
   z-index:10;
-    display: none;
-    list-style: none;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+  display: none;
+  list-style: none;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
 }
 .hidden-block{
+    position: absolute;
+  font-size: 0px;
+  height:285px;
+  width:458px;
+  background:white;
+  padding:55px;
+  z-index:10;
+  display: none;
+  list-style: none;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
   display: block;
 }
 .Arrival-Date input[type="text"],
@@ -314,6 +324,7 @@ ul .search-ul{
   padding: 0px;
   list-style: none;
   outline: none;
+  z-index: 15;
 }
 .button{
   outline: none;
@@ -1088,4 +1099,27 @@ ul {
   content: "";
   display: block;
   clear: both;
+}
+@keyframes move{
+    0%{
+        top: -500px;
+    }
+    50%{
+        top: 250px;
+        80%{
+            top: 120px;
+        }
+    }
+    100%{
+        top: 85px;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(360deg)
+    }
+}
+.hidden-block{
+    animation-name:rotate, move;
+    animation-duration:0.75s, 0.75s;
 }
