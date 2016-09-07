@@ -10,19 +10,19 @@
     <div class="wrapper">
     <header class="main-header">
     <nav class="header-navigation">
-        <ul>
-            <li><a href="#" class="info">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#" class="photo">ФОТО И ВИДЕО</a></li>
-            <li><a href="#" class="logo"><img src="/img/logo.png" alt="лого"></a></li>
-            <li><a href="#" class="site-map">КАРТА ШТАТА</a></li>
-            <li><a href="#" class="hotels">ГОСТИННИЦЫ</a></li>
+        <ul class="clearfix">
+            <li><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li><a href="#">ФОТО И ВИДЕО</a></li>
+            <li><a href="#" ><img src="img/logo.png" alt="лого" width="138" height="70"></a></li>
+            <li><a href="catalog.html">ГОСТИННИЦЫ</a></li>
+            <li><a href="#">КАРТА ШТАТА</a></li>
         </ul>
     </nav>
       
     </header>
       <main class="main">
           <div class="velcome-to-sedona">
-              <img src="/img/main.jpg" width="1200" height="508" alt="добро пожаловать">
+              <img src="img/main.jpg" width="1200" height="508" alt="добро пожаловать">
           </div>
           <div class="reasons5">
               <h2>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
@@ -38,24 +38,24 @@
                   ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
               <div class="reason1-2">
-                  <img src="/img/1-2.jpg" width="800" height="256" alt="настоящий городок">
+                  <img src="img/1-2.jpg" width="800" height="256" alt="настоящий городок">
               </div>
           </div>
           <div class="reasons1-3 clearfix">
               <div class="reason1-3">
-                  <img src="/img/1-3.png" alt="жилье">
+                  <img src="img/1-3.png" alt="жилье">
                   <h2>ЖИЛЬЕ</h2>
                   <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
                   МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
               </div>
               <div class="reason1-4">
-                  <img src="/img/1-4.png" alt="еда">
+                  <img src="img/1-4.png" alt="еда">
                   <h2>ЕДА</h2>
                   <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,
                   ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
               </div>
               <div class="reason1-5">
-                  <img src="/img/1-5.png" alt="сувениры">
+                  <img src="img/1-5.png" alt="сувениры">
                   <h2>СУВЕНИРЫ</h2>
                   <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО
                   ПРОИЗВОДСТВА!</p>
@@ -63,7 +63,7 @@
           </div>
           <div class="reason2 clearfix">
               <div class="reason2-1">
-                  <img src="/img/2-1.jpg" width="800" height="256" alt="мост дьявола">
+                  <img src="img/2-1.jpg" width="800" height="256" alt="мост дьявола">
               </div>
               <div class="reason2-2">
                   <h2>ТАМ ЕСТЬ
@@ -98,45 +98,49 @@
               <p>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
               И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
                <div>
-              <ul class="main-ul">   
-                 <li> <div class="search-header">
-                        <button type="button"><h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2></button>
-                      </div>
-                     <ul class="search-ul">
-                         <li><form class="search">
+                   <ul class="main-ul">   
+                       <li> <div class="search-header">
+                                <button  type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+                            </div>
+                           <ul class="search-ul">
+                               <li class="search"><form class="search">
              
-                               <div class="Arrival-Information">
-                                  <div Class="Arrival-Date">
-                                     <label for="Arrival-Date">ДАТА ЗАЕЗДА:</label>
-                                     <input id="Arrival-Date" type="date">
-                                  </div><br>
-                                  <div class="Date-Of-Departure">
-                                     <label for="Date-Of-Departure">ДАТА ВЫЕЗДА:</label>
-                                     <input id="Date-Of-Departure" type="date" >
-                                  </div><br>
-                                  <div>
-                                     <label for="grown">ВЗРОСЛЫЕ</label>
-                                     <input id="grown" type="number" >
-                                  </div>
-                                  <div>
-                                     <label for="child">ДЕТИ</label>
-                                     <input id="child" type="number" >
-                                  </div>
-                               </div>
+                                   <div class="Arrival-Information">
+                                       <div Class="Arrival-Date clearfix">
+                                           <label for="Arrival-Date" >ДАТА ЗАЕЗДА:</label>
+                                           <input class="date" id="Arrival-Date" type="text" value="24 апреля 2016">
+                                           <div class="calendar1"></div>
+                                       </div>
+                                       <div class="Date-Of-Departure clearfix">
+                                           <label for="Date-Of-Departure">ДАТА ВЫЕЗДА:</label>
+                                           <input class="date" id="Date-Of-Departure" type="text" value="08 июля 2016" >
+                                           <div class="calendar2"></div>
+                                       </div>
+                                       <div class="grown-class">
+                                           <label for="grown">ВЗРОСЛЫЕ:</label>
+                                           <div class="grown-minus"><span></span></div>
+                                           <input id="grown" class="people-number-grown"  type="text" pattern="[0-9]*" value="2">
+                                           <div class="grown-plus"><span></span></div>
+                                       </div>
+                                       <div class="child-class">
+                                           <label for="child">ДЕТИ:</label>
+                                           <div class="child-minus"><span></span></div>
+                                           <input id="child" class="people-number-child"  type="text" pattern="[0-9]*" value="0">
+                                           <div class="child-plus"><span></span></div>
+                                       </div>
+                                   </div>
                               <div class="search-btn">
                                  <input type="submit" value="НАЙТИ">
                               </div>
-                            </form></li>
+                               </form></li>
+                           </ul>
+                       </li>
                    </ul>
-                   </li>
-            </ul>
-          </div>
+               </div>
           </div>
           <div class="map-main">
-              <img src="/img/map.jpg" height="593" width="1200" alt="карта">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18052164407!2d-111.8302437357105!3d34.85437335642629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+Arizona+86336%2C+Stati+Uniti!5e0!3m2!1sit!2sfr!4v1462890121921" width="1200" height="593" style="border:0" allowfullscreen></iframe>
           </div>
-         
-          
       </main>
       <footer class="main-footer">
           <div class="container-footer clearfix">
@@ -149,10 +153,12 @@
                   <a class="social-btn social-btn-youtube" href="#">Youtube</a>
               </div>
               <div class="HTML-ACADEMY">
-                  <a class="btn" href="https://htmlacademy.ru"><img src="/img/HTML-ACADEMY.png" alt="HTML-ACADEMY"></a>
+                <span>WEBSITE BY</span>
+                  <a class="btn" href="https://htmlacademy.ru"></a>
               </div>
           </div>
       </footer>
       </div>
+      <script src="js/main.js"></script>
   </body>
 </html>
