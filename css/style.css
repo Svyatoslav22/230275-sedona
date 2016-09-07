@@ -771,11 +771,12 @@ ul {
 .from-end3000{
   border:2px solid white;
   border-radius: 2px;
-  width:318px;
+  width:314px;
+  font-size: 0;
 }
 .price-btn input[type="text"]{
   display:inline-block;
-  width:159px;
+  max-width:157px;
   height:35px;
   text-align:center;
   border:none;
@@ -830,9 +831,6 @@ ul {
 .price-btn input {
   border-radius:2px;
   color:white;
-}
-.price-btn input[type="text"] {
-
 }
 .price-btn input[type="submit"]:hover{
   color:black;
@@ -1080,13 +1078,13 @@ ul {
 .header-navigation li a:active {
   color:#b2b2b2;
 }
-.active-menu a{
+.header-navigation li .active-menu{
   color:#766357;
 }
-.active-menu a:hover {
+.header-navigation li .active-menu:hover {
   color:#75665c;
 }
-.active-menu a:active {
+.header-navigation li .active-menu:active {
   color:#dbd6d3;
 }
 @font-face {
