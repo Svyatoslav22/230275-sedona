@@ -6,7 +6,7 @@ body {
     font-weight: bold; 
     width:1200px;
     margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 h2 {
     font-size: 21px;
@@ -45,10 +45,10 @@ p {
     margin-bottom: 10px;
 }
 .reasons5 {
-    padding-top:62px;
+    padding-top:60px;
     background:white;
     width:1200px;
-    min-height:154px;
+    min-height:156px;
     text-align:center;
     padding-bottom:1px;
 }
@@ -416,6 +416,10 @@ ul {
     border:none;
     outline: none;
     vertical-align: top;
+    color: black;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
 }
 .child-plus>span:before{
     content:"\e801";
@@ -598,6 +602,10 @@ ul {
     border:none;
     outline: none;
     vertical-align: top;
+    color: black;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
 }
 .child-class label {
     font-size: 14px;
@@ -629,6 +637,7 @@ ul {
     font-size:21px;
     font-weight:bold;
     margin-top:54px;
+    outline: none;
 }
 .search-btn input[type="submit"]:hover {
     background:#669ec0;
@@ -850,17 +859,21 @@ span {
     width:314px;
     font-size: 0;
     margin-left: 10px;
-    margin-top: 8px;
+    margin-top: 7px;
 }
 .price-btn input[type="text"]{
     display:inline-block;
-    width:157px;
+    max-height: width:157px;
     height:27px;
     text-align:center;
     border:none;
     background:rgba(255, 255, 255, 0);
     outline: none;
     color: white;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    text-align: center;
  }
 
 .price-range .range-line{
@@ -908,6 +921,9 @@ span {
     background:rgba(255, 255, 255, 0);
     outline: none;
     cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
 }
 .price-btn input {
     border-radius:2px;

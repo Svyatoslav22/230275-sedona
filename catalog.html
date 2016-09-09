@@ -1,129 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Поиск отелей Седона</title>
-  </head>
-  <body>
-        <header class="main-header">
-    <nav class="header-navigation clearfix">
-        <ul>
-            <li><a href="#">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#">ФОТО И ВИДЕО</a></li>
-            <li><a href="index.html" class="logo"><img src="img/logo.png" alt="лого" width="138" height="70"></a></li>
-            <li><a href="#" class="active-menu">ГОСТИНИЦЫ</a></li>
-            <li><a href="#">КАРТА ШТАТА</a></li>
-        </ul>
-    </nav>
-      
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="header-navigation clearfix">
+            <ul>
+                <li><a href="#">ИНФОРМАЦИЯ</a></li>
+                <li><a href="#">ФОТО И ВИДЕО</a></li>
+                <li>
+                    <a href="index.html" class="logo"><img src="img/logo.png" alt="лого" width="138" height="70"></a>
+                </li>
+                <li><a href="#" class="active-menu">ГОСТИНИЦЫ</a></li>
+                <li><a href="#">КАРТА ШТАТА</a></li>
+            </ul>
+        </nav>
+
     </header>
-      <main class="main-item">
-          <form class="filter clearfix">
-              <div class="checkbox1">
-                  <span>ИНФРАСТРУКТУРА:</span>
-                  <ul>
-                      <li>
-                          <input class="checkbox" id="pool-checkbox" type="checkbox" checked>
-                          <label for="pool-checkbox">БАССЕЙН</label>
-                      </li>
-                      <li>
-                          <input class="checkbox" id="parking-checkbox" type="checkbox">
-                          <label for="parking-checkbox">ПАРКОВКА</label>
-                      </li>
-                      <li>
-                          <input class="checkbox" id="WI-FI-checkbox" type="checkbox">
-                          <label for="WI-FI-checkbox">WI-FI</label>
-                      </li>
-                  </ul>
-              </div>
-              <div class="checkbox2">
-                  <span>ТИП ЖИЛЬЯ:</span>
-                  <ul>
-                      <li>
-                          <input class="checkbox" id="hotel-checkbox" type="checkbox" checked>
-                          <label for="hotel-checkbox">ГОСТИНИЦА</label>
-                      </li>
-                      <li>
-                          <input class="checkbox" id="motel-checkbox" type="checkbox" checked>
-                          <label for="motel-checkbox">МОТЕЛЬ</label>
-                      </li>
-                      <li>
-                          <input class="checkbox" id="appartaments-checkbox" type="checkbox" checked>
-                          <label for="appartaments-checkbox">АПАРТАМЕНТЫ</label>
-                      </li>
-                  </ul>
-              </div>
-              <div class="price-btn">
-                  <span>СТОИМОСТЬ В СУТКИ (Р):</span><br>
-                  <div class="from-end3000"><input  class="from" type="text" value="ОТ 0"><input class="end3000" type="text" value="ДО 3000"></div>
-                  <div class="line"></div>
-                  <div class="price-range">
+    <main class="main-item">
+        <form class="filter clearfix">
+            <div class="checkbox1">
+                <span>ИНФРАСТРУКТУРА:</span>
+                <ul>
+                    <li>
+                        <input class="checkbox" id="pool-checkbox" type="checkbox" checked>
+                        <label for="pool-checkbox">БАССЕЙН</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" id="parking-checkbox" type="checkbox">
+                        <label for="parking-checkbox">ПАРКОВКА</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" id="WI-FI-checkbox" type="checkbox">
+                        <label for="WI-FI-checkbox">WI-FI</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="checkbox2">
+                <span>ТИП ЖИЛЬЯ:</span>
+                <ul>
+                    <li>
+                        <input class="checkbox" id="hotel-checkbox" type="checkbox" checked>
+                        <label for="hotel-checkbox">ГОСТИНИЦА</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" id="motel-checkbox" type="checkbox" checked>
+                        <label for="motel-checkbox">МОТЕЛЬ</label>
+                    </li>
+                    <li>
+                        <input class="checkbox" id="appartaments-checkbox" type="checkbox" checked>
+                        <label for="appartaments-checkbox">АПАРТАМЕНТЫ</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="price-btn">
+                <span>СТОИМОСТЬ В СУТКИ (Р):</span>
+                <br>
+                <div class="from-end3000">
+                    <input class="from" type="text" value="ОТ 0">
+                    <input class="end3000" type="text" value="ДО 3000">
+                </div>
+                <div class="line"></div>
+                <div class="price-range">
                     <div class="range-slide1"></div>
                     <div class="range-line"></div>
                     <div class="range-slide2"></div>
-                  </div>
-                  <input  type="submit" value="ПОКАЗАТЬ">
-              </div>
-          </form>
-          <div class="filter2 clearfix">
-              <span class="found">НАЙДЕНО: 3 </span>
+                </div>
+                <input type="submit" value="ПОКАЗАТЬ">
+            </div>
+        </form>
+        <div class="filter2 clearfix">
+            <span class="found">НАЙДЕНО: 3 </span>
             <ul>
-                <li><p class="sort">СОРТИРОВКА:</p></li>
-                <li><a  class="active" href="#">ПО ЦЕНЕ</a></li>
+                <li>
+                    <p class="sort">СОРТИРОВКА:</p>
+                </li>
+                <li><a class="active" href="#">ПО ЦЕНЕ</a></li>
                 <li><a href="#">ПО ТИПУ</a></li>
                 <li><a href="#">ПО РЕЙТИНГУ</a></li>
-              </ul>
-              <div class="arrow"><a class="arrow-up">▲</a><a class="arrow-down active">▼</a></div>
-          </div>
-          <div class="result">
-              <div class="amara clearfix">
-                  <img src="img/ar&s.jpg" alt="AMARA RESORT & SPA">
-                  <a href="#" class="name-hotel"><h2>AMARA RESORT & SPA</h2></a><br>
-                  <div class="type-catalog">ГОСТИНИЦА</div><div class="from-catalog">ОТ 3500 Р.</div><br>
-                  <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
-                  <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
-                  <div class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
-                  <div class="hotel-rating">РЕЙТИНГ: 8,5</div>
-              </div>
-              <div class="DESERT">
-                  <img src="img/dqi.jpg" alt="DESERT QUAIL INN">
-                  <a href="#" class="name-hotel"><h2>DESERT QUAIL INN</h2></a><br>
-                  <div class="type-catalog">МОТЕЛЬ</div><div class="from-catalog">ОТ 2000 Р.</div><br>
-                  <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
-                  <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
-                  <div class="stars"><i class="icon-star"></i><i class="icon-star"></i></div>
-                  <div class="hotel-rating">РЕЙТИНГ: 8,9</div>
-              </div>
-              <div class="VILLAS">
-                  <img src="img/vapd.jpg" alt="VILLAS AT POCO DIABLO">
-                  <a href="#" class="name-hotel"><h2>VILLAS AT POCO DIABLO</h2></a><br>
-                  <div class="type-catalog">АПАРТАМЕНТЫ</div><div class="from-catalog">ОТ 4000 Р.</div><br>
-                  <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
-                  <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
-                  <div class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
-                  <div class="hotel-rating">РЕЙТИНГ: 9,2</div>
-              </div>
-          </div>
-      </main>
-      <footer class="main-footer">
-          <div class="container-footer clearfix">
-              <div class="hashtag">
-                  <h2>#VISITSEDONA</h2>
-              </div>
-              <div class="social">
-                  <a class="social-btn social-btn-Twitter" href="#">Twitter</a>
-                  <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                  <a class="social-btn social-btn-youtube" href="#">Youtube</a>
-              </div>
-              <div class="HTML-ACADEMY">
+            </ul>
+            <div class="arrow"><a class="arrow-up">▲</a><a class="arrow-down active">▼</a></div>
+        </div>
+        <div class="result">
+            <div class="amara clearfix">
+                <img src="img/ar&s.jpg" alt="AMARA RESORT & SPA">
+                <a href="#" class="name-hotel"><h2>AMARA RESORT & SPA</h2></a>
+                <br>
+                <div class="type-catalog">ГОСТИНИЦА</div>
+                <div class="from-catalog">ОТ 3500 Р.</div>
+                <br>
+                <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
+                <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
+                <div class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                <div class="hotel-rating">РЕЙТИНГ: 8,5</div>
+            </div>
+            <div class="DESERT">
+                <img src="img/dqi.jpg" alt="DESERT QUAIL INN">
+                <a href="#" class="name-hotel"><h2>DESERT QUAIL INN</h2></a>
+                <br>
+                <div class="type-catalog">МОТЕЛЬ</div>
+                <div class="from-catalog">ОТ 2000 Р.</div>
+                <br>
+                <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
+                <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
+                <div class="stars"><i class="icon-star"></i><i class="icon-star"></i></div>
+                <div class="hotel-rating">РЕЙТИНГ: 8,9</div>
+            </div>
+            <div class="VILLAS">
+                <img src="img/vapd.jpg" alt="VILLAS AT POCO DIABLO">
+                <a href="#" class="name-hotel"><h2>VILLAS AT POCO DIABLO</h2></a>
+                <br>
+                <div class="type-catalog">АПАРТАМЕНТЫ</div>
+                <div class="from-catalog">ОТ 4000 Р.</div>
+                <br>
+                <a class="more-btn" href="#">ПОДРОБНЕЕ</a>
+                <a class="reserv-btn" href="#">ЗАБРОНИРОВАТЬ</a>
+                <div class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                <div class="hotel-rating">РЕЙТИНГ: 9,2</div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container-footer clearfix">
+            <div class="hashtag">
+                <h2>#VISITSEDONA</h2>
+            </div>
+            <div class="social">
+                <a class="social-btn social-btn-Twitter" href="#">Twitter</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-youtube" href="#">Youtube</a>
+            </div>
+            <div class="HTML-ACADEMY">
                 <span>WEBSITE BY</span>
-                  <a class="btn" href="https://htmlacademy.ru"></a>
-              </div>
-          </div>
-      </footer>
-      <script src="js/main.min.js"></script>
-  </body>
+                <a class="btn" href="https://htmlacademy.ru"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
 </html>
