@@ -241,6 +241,7 @@ text-align:center;
     height:593px;
     margin-bottom:-119px;
     z-index:1;
+    background: url("../img/map.jpg") no-repeat 50% 50%;
 }
 .search li{
     width: 458px;
