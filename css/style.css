@@ -3,7 +3,6 @@ body {
     font-size: 12px;
     line-height: 26px;
     color: black;
-    font:'PT Sans';
     font-weight: bold; 
     width:1200px;
     margin: 0 auto;
@@ -416,6 +415,7 @@ ul {
     background:#f2f2f2;
     border:none;
     outline: none;
+    vertical-align: top;
 }
 .child-plus>span:before{
     content:"\e801";
@@ -597,6 +597,7 @@ ul {
     background:#f2f2f2;
     border:none;
     outline: none;
+    vertical-align: top;
 }
 .child-class label {
     font-size: 14px;
@@ -606,6 +607,7 @@ ul {
     font-weight: bold;
     display: inline-block;
     margin-right: 25px;
+    line-height: 38px;
 }
 .grown-class label {
     font-size: 14px;
@@ -615,6 +617,7 @@ ul {
     font-weight: bold;
     display: inline-block;
     margin-right: 42px;
+    line-height: 38px;
 }
 .search-btn input[type="submit"]{
     display:inline-block;
@@ -851,12 +854,13 @@ span {
 }
 .price-btn input[type="text"]{
     display:inline-block;
-    max-width:157px;
+    width:157px;
     height:27px;
     text-align:center;
     border:none;
     background:rgba(255, 255, 255, 0);
     outline: none;
+    color: white;
  }
 
 .price-range .range-line{
@@ -1084,7 +1088,7 @@ span {
     background:white;
     width:1056px;
     height:95px;
-    border-top:-1px solid #e5e5e5;
+    border-top:0px solid #e5e5e5;
     border-bottom:1px solid #e5e5e5;
 }
 .result .DESERT img{
@@ -1101,7 +1105,7 @@ span {
     background:white;
     width:1056px;
     height:95px;
-    border-top:-1px solid #e5e5e5;
+    border-top:0px solid #e5e5e5;
     border-bottom:1px solid #e5e5e5;
 }
 .result .VILLAS img{
@@ -1232,7 +1236,7 @@ span {
     font-style:normal;
     font-family:"symbols-sedona";
     font-size:21px;
-    color: :#82b4d3;
+    color:#82b4d3;
     font-size: 19px;
     margin-right: 7px;
 }
