@@ -805,7 +805,7 @@ span {
     color:white;
 }
  
-.checkbox:not(checked) { 
+.checkcheckbox:not(checked) { 
     position: absolute; 
     opacity: 0; 
 } 
